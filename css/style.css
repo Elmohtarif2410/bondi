@@ -65,7 +65,7 @@ ul {
     border: none;
     border-radius: 100px;
     transition: var(--main-transition);
-    padding: 5px 20px;
+    padding: 8px 25px;
 }
 
 .main-button:hover {
@@ -87,7 +87,6 @@ ul {
 }
 
 .navbar .nav-link {
-    color: white;
     padding: 15px;
     text-transform: capitalize;
     transition: var(--main-transition);
@@ -95,7 +94,7 @@ ul {
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-    color: var(--green-color);
+    color: var(--green-color) !important;
 }
 
 .navbar .search {
@@ -119,6 +118,16 @@ ul {
 }
 
 /********************** End Style Navbar ***********************/
+
+/********************** Start Style landding ***********************/
+
+body > header {
+    background-color: var(--main-color);
+    height: calc(100vh - 70px);
+}
+
+/********************** End Style landding ***********************/
+
 
 
 
