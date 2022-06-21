@@ -12,7 +12,12 @@ html {
 }
 
 :root {
-
+    --main-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yallo-color: #ffc400;
+    --main-padding: 80px;
+    --main-transition: .4s;
 }
 
 body {
@@ -52,7 +57,68 @@ ul {
 
 /********************** End Style Global Rouls ***********************/
 
+/********************** Start Style compotant ***********************/
 
+.main-button {
+    background-color: var(--red-color);
+    color: var(--yallo-color);
+    border: none;
+    border-radius: 100px;
+    transition: var(--main-transition);
+    padding: 5px 20px;
+}
+
+.main-button:hover {
+    background-color: #d7213c;
+    color: white
+}
+
+/********************** End Style compotant ***********************/
+
+/********************** Start Style Navbar ***********************/
+
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar .navbar-toggler {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar .nav-link {
+    color: white;
+    padding: 15px;
+    text-transform: capitalize;
+    transition: var(--main-transition);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    color: var(--green-color);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.navbar .search:hover svg {
+    color: white
+}
+
+.navbar .search::before {
+    content: "|";
+    font-size: 20px;
+}
+
+.navbar .search svg {
+    margin-left: 5px;
+    transition: var(--main-transition);
+}
+
+/********************** End Style Navbar ***********************/
 
 
 
