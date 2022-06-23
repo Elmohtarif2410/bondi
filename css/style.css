@@ -13,6 +13,7 @@ html {
 
 :root {
     --main-color: #19283f;
+    --secound-color: #eff7fa;
     --green-color: #33d1cc;
     --red-color: #ff3150;
     --yallo-color: #ffc400;
@@ -73,7 +74,44 @@ ul {
     color: white
 }
 
+.main-heading {
+    width: fit-content;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+
+.main-heading::before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    transform: translateX(50%);
+    height: 3px;
+    background-color: var(--green-color);
+}
+
+.main-heading svg {
+    color: var(--yallo-color)
+}
+
+.main-heading h2 {
+    text-transform: capitalize;
+    margin: 25px 0 10px
+}
+
+.main-heading p {
+    color: rgb(0 0 0 / 50%);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
 /********************** End Style compotant ***********************/
+
+/*********************************************************************
+************************** Style to project **************************
+*********************************************************************/
 
 /********************** Start Style Navbar ***********************/
 
@@ -128,9 +166,42 @@ body > header {
 
 /********************** End Style landding ***********************/
 
+/********************** Start Style Services ***********************/
+
+.services {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.services .row section {
+    counter-increment: cunt;
+}
+
+.services .row section .icon {
+    position: relative;
+    height: 200px;
+}
+
+.services .row section .icon::before {
+    content: counter(cunt);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 170px;
+    color: var(--secound-color)
+}
+
+.services .row section .icon svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--green-color)
+}
+
+.services .row section h3 {color: var(--yallo-color)}
 
 
-
-/*********************************************************************
-************************** Style to project **************************
-*********************************************************************/
+/********************** End Style landding ***********************/
