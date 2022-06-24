@@ -86,8 +86,8 @@ ul {
     width: 100px;
     position: absolute;
     bottom: -15px;
-    left: 0px;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
     height: 3px;
     background-color: var(--green-color);
 }
@@ -105,12 +105,6 @@ ul {
     color: rgb(0 0 0 / 50%);
     text-transform: uppercase;
     font-size: 14px;
-}
-
-@media (max-width: 767px) {
-    .main-heading::before {
-        transform: translateX(30%);
-    }
 }
 
 /********************** End Style compotant ***********************/
@@ -178,8 +172,6 @@ body > header {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
-
-.services .main-heading::before {left: 10px}
 
 .services .row section {
     counter-increment: cunt;
@@ -268,6 +260,18 @@ body > header {
 
 /********************** End Style portfolio ***********************/
 
+
+/********************** Start Style About me ***********************/
+
+.about {
+    padding-top: var(--main-padding);
+}
+
+.about .row p {
+    text-align: justify;
+}
+
+/********************** End Style About me ***********************/
 
 /********************** Start Style  ***********************/
 
