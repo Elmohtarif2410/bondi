@@ -267,11 +267,47 @@ body > header {
     padding-top: var(--main-padding);
 }
 
+.about .main-p {
+    max-width: 500px;
+}
+
 .about .row p {
-    text-align: justify;
+    font-size: 14px;
+}
+
+.about .row img {
+    margin-bottom: -25px;
+}
+
+@media (min-width: 992px) {
+    .about .row p {
+        text-align: justify !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .about .row img {
+        margin-bottom: 0
+    }
+    
 }
 
 /********************** End Style About me ***********************/
+
+/********************** Start Style team member ***********************/
+
+.team {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--secound-color);
+}
+
+.team h2 {
+    color: var(--yallo-color);
+    text-transform: capitalize;
+}
+
+/********************** End Style team member ***********************/
 
 /********************** Start Style  ***********************/
 
