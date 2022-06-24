@@ -25,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif, Tahoma, Geneva, Verdana;
 }
 
-.container {
+/* .container {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -42,7 +42,7 @@ body {
 
 @media (min-width: 1200px) {
     .container {width: 1170px}
-}
+} */
 
 button {
     background: none
@@ -86,7 +86,7 @@ ul {
     width: 100px;
     position: absolute;
     bottom: -15px;
-    left: 10px;
+    left: 0px;
     transform: translateX(50%);
     height: 3px;
     background-color: var(--green-color);
@@ -105,6 +105,12 @@ ul {
     color: rgb(0 0 0 / 50%);
     text-transform: uppercase;
     font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .main-heading::before {
+        transform: translateX(30%);
+    }
 }
 
 /********************** End Style compotant ***********************/
@@ -173,6 +179,8 @@ body > header {
     padding-bottom: var(--main-padding);
 }
 
+.services .main-heading::before {left: 10px}
+
 .services .row section {
     counter-increment: cunt;
 }
@@ -205,3 +213,62 @@ body > header {
 
 
 /********************** End Style landding ***********************/
+
+/********************** Start Style portfolio ***********************/
+
+.portfolio {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--secound-color);
+}
+
+.portfolio ul li {transition: var(--main-transition); cursor: pointer}
+
+.portfolio ul li.active {
+    background-color: var(--red-color);
+    color: var(--yallo-color);
+    border-radius: 20px;
+}
+
+.portfolio ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.portfolio .projects section .box {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / .2);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .projects section .box::before {
+    content: attr(data-name);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 5px;
+    left: calc(-100% + 10px);
+    background-color: #33d1cca6;
+    transition: var(--main-transition);
+}
+
+.portfolio .projects section .box:hover::before {left: 5px;}
+
+.portfolio .projects section img {
+    max-width: 100%;
+}
+
+/********************** End Style portfolio ***********************/
+
+
+/********************** Start Style  ***********************/
+
+/********************** End Style  ***********************/
