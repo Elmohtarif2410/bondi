@@ -303,6 +303,7 @@ body > header {
 }
 
 .team h2 {
+    font-weight: bold;
     color: var(--yallo-color);
     text-transform: capitalize;
 }
@@ -319,9 +320,14 @@ body > header {
 
 /********************** End Style team member ***********************/
 
-/********************** Start Style  ***********************/
+/********************** Start Style tech ***********************/
 
-/********************** End Style  ***********************/
+.tech {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+/********************** End Style tech ***********************/
 
 
 /********************** Start Style  ***********************/
