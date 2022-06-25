@@ -307,7 +307,22 @@ body > header {
     text-transform: capitalize;
 }
 
+.team .row .card h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: var(--green-color);
+    color: white;
+    padding: 12px
+}
+
+.team .row .card p {font-size: 14px;}
+
 /********************** End Style team member ***********************/
+
+/********************** Start Style  ***********************/
+
+/********************** End Style  ***********************/
+
 
 /********************** Start Style  ***********************/
 
