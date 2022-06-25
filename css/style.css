@@ -339,6 +339,24 @@ body > header {
 
 /******************* End Style start project *******************/
 
+/********************** Start Style blog ***********************/
+
+.blog {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.blog .card span {
+    font-size: 14px;
+}
+
+.blog .card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/********************** End Style blog ***********************/
+
 /********************** Start Style  ***********************/
 
 /********************** End Style  ***********************/
