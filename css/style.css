@@ -329,6 +329,15 @@ body > header {
 
 /********************** End Style tech ***********************/
 
+/**************** Start Style start project ********************/
+
+.start-project {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--main-color);
+}
+
+/******************* End Style start project *******************/
 
 /********************** Start Style  ***********************/
 
