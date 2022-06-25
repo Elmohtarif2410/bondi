@@ -357,6 +357,36 @@ body > header {
 
 /********************** End Style blog ***********************/
 
+/********************** Start Style subscribe ***********************/
+
+.subscribe {
+    padding-top: calc(var(--main-padding) / 2);
+    padding-bottom: calc(var(--main-padding) / 2);
+    background-color: var(--yallo-color);
+}
+
+.subscribe div input[type="text"] {
+    background-color: transparent;
+    outline: none;
+    caret-color: white;
+    color: white;
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.subscribe div input[type="text"]::placeholder {
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+}
+
+/********************** End Style subscribe ***********************/
+
+/********************** Start Style  ***********************/
+
+/********************** End Style  ***********************/
+
 /********************** Start Style  ***********************/
 
 /********************** End Style  ***********************/
