@@ -392,17 +392,17 @@ body > footer {
     font-size: 14px;
 }
 
-body > footer .row .footer span {
+body > footer .row .copyright span {
     color: var(--green-color)
 }
 
-body > footer .row .footer a {
+body > footer .row .copyright a {
     color: var(--yallo-color);
     text-decoration: none;
     transition: var(--main-transition);
 }
 
-body > footer .row .footer a:hover {
+body > footer .row .copyright a:hover {
     color: var(--green-color)
 }
 
